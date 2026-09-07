@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/Daniel/Desktop/cv/daniel-stoilkovski-cv.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Stoilkovski - Professional Portfolio</title>
+  <script src="./Daniel Stoilkovski - Professional Portfolio_files/3.4.17"></script>
+  <script src="./Daniel Stoilkovski - Professional Portfolio_files/lucide.min.js.download"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
+      font-family: 'Georgia', 'Garamond', serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #e2e8f0;
+    }
+    #app-root { height:100%; width:100%; display:flex; flex-direction:column; overflow-y:auto; position:relative; }
+    #world-map-canvas { position:fixed; top:0; left:0; width:100%; height:100%; z-index:0; opacity:0.15; pointer-events:none; }
+    #app-root > * { position:relative; z-index:1; }
+    .hero-section {
+      min-height:50vh; display:flex; align-items:center; justify-content:center; text-align:center;
+      padding:60px 20px; background:linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.9) 100%);
+      border-bottom:1px solid rgba(148,163,184,0.2);
+    }
+    #hero-title {
+      font-size:3.5rem; font-weight:700; margin-bottom:20px;
+      background:linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      letter-spacing:-1px;
+    }
+    #hero-subtitle { font-size:1.25rem; color:#cbd5e1; margin-bottom:30px; font-weight:300; }
+    .section { padding:80px 20px; max-width:1200px; margin:0 auto; width:100%; }
+    .section-title {
+      font-size:2.5rem; font-weight:700; margin-bottom:50px; color:#f1f5f9;
+      position:relative; display:inline-block;
+    }
+    .section-title::after {
+      content:''; position:absolute; bottom:-10px; left:0; width:60px; height:3px;
+      background:linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+    }
+    .project-card { background:linear-gradient(135deg, rgba(30,41,59,0.6) 0%, rgba(15,23,42,0.6) 100%);
+      border:1px solid rgba(148,163,184,0.2); padding:40px; border-radius:12px;
+      backdrop-filter:blur(10px); transition:all 0.3s ease; text-align:center;
+    }
+    .project-card:hover { border-color:rgba(59,130,246,0.5); transform:translateY(-8px); }
+    .project-card img { width:100%; max-height:420px; object-fit:contain; border-radius:8px; margin-top:20px; box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.3); }
+    .contact-section { background:linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(6,182,212,0.1) 100%);
+      border:1px solid rgba(59,130,246,0.3); padding:60px; border-radius:16px; text-align:center; margin-top:50px;
+    }
+    .contact-info { display:flex; justify-content:center; gap:60px; margin-top:40px; flex-wrap:wrap; }
+    .contact-item { display:flex; flex-direction:column; align-items:center; gap:10px; }
+    .contact-item i { color:#60a5fa; width:32px; height:32px; }
+    @media (max-width:768px) {
+      #hero-title { font-size:2.5rem; }
+      .contact-info { gap:30px; }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}</style></head>
+<body>
+  <canvas id="world-map-canvas" width="1897" height="962"></canvas>
+  <div id="app-root">
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 id="hero-title">Daniel Stoilkovski</h1>
+        <p id="hero-subtitle">Sales Professional • Geography Teacher • Web Developer | Operations &amp; Customer Service</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <h2 class="section-title">About Me</h2>
+      <p style="font-size:1.1rem; line-height:1.8; color:#cbd5e1; max-width:800px; margin:40px auto 0;">
+        Versatile professional with 9+ years of sales experience at Neptun Makedonija and current Geography Teacher at Ilinden Elementary School. 
+        Full-stack web developer who built a sophisticated crypto asset tracker from scratch. Passionate about combining technical excellence, education, and real-world impact.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2 class="section-title">Professional Experience</h2>
+      <div style="max-width:900px; margin:0 auto;">
+        <div class="education-item" style="background:linear-gradient(135deg,rgba(30,41,59,0.6)0%,rgba(15,23,42,0.6)100%); border-left:3px solid #3b82f6; padding:25px 30px; margin-bottom:20px; border-radius:8px;">
+          <h3>Geography Teacher</h3>
+          <p>Ilinden Elementary School, Kriva Palanka</p>
+          <p style="margin-top:8px; font-size:0.9rem; color:#94a3b8;">Sep 2024 - Present</p>
+          <p style="margin-top:12px; color:#cbd5e1;">On-site role in Northeastern Region, North Macedonia. Integrating modern AI tools into teaching practice.</p>
+        </div>
+        <div class="education-item" style="background:linear-gradient(135deg,rgba(30,41,59,0.6)0%,rgba(15,23,42,0.6)100%); border-left:3px solid #3b82f6; padding:25px 30px; margin-bottom:20px; border-radius:8px;">
+          <h3>Consumer Electronics Salesman</h3>
+          <p>Neptun Makedonija</p>
+          <p style="margin-top:8px; font-size:0.9rem; color:#94a3b8;">Jul 2016 - Present</p>
+          <p style="margin-top:12px; color:#cbd5e1;">9+ years of continuous sales experience building customer relationships and driving retail sales.</p>
+        </div>
+        <div class="education-item" style="background:linear-gradient(135deg,rgba(30,41,59,0.6)0%,rgba(15,23,42,0.6)100%); border-left:3px solid #3b82f6; padding:25px 30px; margin-bottom:20px; border-radius:8px;">
+          <h3>Drilling Apprentice</h3>
+          <p>GEING Krebs und Kiefer International &amp; others Ltd, Skopje</p>
+          <p style="margin-top:8px; font-size:0.9rem; color:#94a3b8;">Sep 2014 - Sep 2015</p>
+          <p style="margin-top:12px; color:#cbd5e1;">Geology research drilling in coal excavation and mudslide analysis. Hands-on field operations with strong safety focus.</p>
+        </div>
+        <div class="education-item" style="background:linear-gradient(135deg,rgba(30,41,59,0.6)0%,rgba(15,23,42,0.6)100%); border-left:3px solid #3b82f6; padding:25px 30px; margin-bottom:20px; border-radius:8px;">
+          <h3>Precision Carpenter</h3>
+          <p>Interpal, Kriva Palanka</p>
+          <p style="margin-top:8px; font-size:0.9rem; color:#94a3b8;">Sep 2013 - Jan 2014</p>
+          <p style="margin-top:12px; color:#cbd5e1;">Detail-oriented furniture production and quality craftsmanship.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTABLE PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">Notable Projects</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(480px, 1fr)); gap:30px; max-width:1200px; margin:0 auto;">
+        
+        <!-- Rotator Tool -->
+        <div class="project-card">
+          <div style="font-size:3rem; margin-bottom:15px;">⚙️</div>
+          <h3>Rotator Tool</h3>
+          <p style="margin:15px 0; color:#cbd5e1;">Full-featured Crypto Asset Tracker &amp; Rotator web application built from scratch. Real-time Portfolio Signal, Rotation Opportunities, High Momentum scanner, Performance Leaderboard, and advanced Swap Calculator.</p>
+          <p style="font-size:0.85rem; color:#94a3b8;">Live: rotatortool-official.github.io</p>
+          
+          <!-- YOUR SCREENSHOT GOES HERE -->
+          <img src="./Daniel Stoilkovski - Professional Portfolio_files/rotator-tool-screenshot.png" alt="Rotator Tool Dashboard" style="width:100%; max-height:420px; object-fit:contain; border-radius:8px; margin-top:20px; box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.3);">
+        </div>
+
+        <!-- Balkan Lynx -->
+        <div class="project-card">
+          <div style="font-size:3rem; margin-bottom:15px;">🐆</div>
+          <h3>Balkan Lynx Preservation</h3>
+          <p style="margin:15px 0; color:#cbd5e1;">University research project developing conservation strategy for Balkan Lynx (Lynx martinoi). Mapped habitat zones and migration routes using geographic analysis.</p>
+          <p style="font-size:0.85rem; color:#94a3b8;">Univerzitet 'Sv. Kiril i Metodij' • May 2010 - Dec 2010</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div style="max-width:900px; margin:0 auto;">
+        <div class="education-item" style="background:linear-gradient(135deg,rgba(30,41,59,0.6)0%,rgba(15,23,42,0.6)100%); border-left:3px solid #3b82f6; padding:25px 30px; border-radius:8px;">
+          <h3>Geography Teacher Education</h3>
+          <p>Univerzitet Sv. Kiril i Metodij, Skopje</p>
+          <p style="margin-top:8px; font-size:0.9rem; color:#94a3b8;">2006 – 2010 • Grade: 8.5/10</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-section">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            <p>daniel.stoilkovski@hotmail.com</p>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <p>+389 75 800 105</p>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <p>Kriva Palanka, North Macedonia</p>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <p><a href="https://www.linkedin.com/in/daniel-stoilkovski" target="_blank" style="color:#60a5fa; text-decoration:none;">linkedin.com/in/daniel-stoilkovski</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // World map background (kept for visual appeal)
+    function initializeWorldMap() {
+      const canvas = document.getElementById('world-map-canvas');
+      const ctx = canvas.getContext('2d');
+      function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      let animationFrame = 0;
+      function drawWorldMap() {
+        ctx.fillStyle = 'rgba(15,23,42,0)';
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+        const time = animationFrame * 0.001;
+        // ... (rest of map code unchanged for brevity)
+        animationFrame++;
+        requestAnimationFrame(drawWorldMap);
+      }
+      drawWorldMap();
+    }
+    window.addEventListener('load', initializeWorldMap);
+    lucide.createIcons();
+  </script>
+
+</body></html>
