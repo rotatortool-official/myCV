@@ -126,8 +126,10 @@
       display:block; margin-top:6px;
       font-size:0.75rem; letter-spacing:1.4px; text-transform:uppercase; color:var(--ink-mute);
     }
+    /* The card is a flex column, which stretches its children full width, so
+       inline-block alone leaves the pill and the QR panel spanning the card. */
     .card-tag {
-      display:inline-block; margin-top:12px; padding:4px 12px;
+      align-self:center; margin-top:12px; padding:4px 12px;
       border:1px solid rgba(96,165,250,0.4); border-radius:999px;
       font-size:0.72rem; letter-spacing:1.2px; text-transform:uppercase; color:var(--accent);
     }
@@ -141,7 +143,7 @@
       margin-top:20px; box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.3);
     }
     .qr-panel {
-      display:inline-block; margin-top:20px; padding:14px;
+      align-self:center; margin-top:20px; padding:14px;
       background:#fff; border-radius:12px; line-height:0;
     }
     .qr-panel img { width:150px; height:150px; margin:0; box-shadow:none; border-radius:0; }
