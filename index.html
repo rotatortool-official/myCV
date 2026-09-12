@@ -53,6 +53,13 @@
       background:linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.9) 100%);
       border-bottom:1px solid var(--line);
     }
+    /* The source is a square crop, so the circle only ever clips corners. */
+    .portrait {
+      width:clamp(110px, 18vw, 160px); height:clamp(110px, 18vw, 160px);
+      border-radius:50%; object-fit:cover; margin:0 auto 22px;
+      border:3px solid rgba(96,165,250,0.45);
+      box-shadow:0 12px 28px rgba(0,0,0,0.45);
+    }
     #hero-title {
       font-family:var(--font-display);
       font-size:var(--fs-hero); font-weight:700; line-height:1.05; margin-bottom:18px;
@@ -176,6 +183,7 @@
     <!-- HERO -->
     <section class="hero-section">
       <div class="hero-content">
+        <img class="portrait" src="./Daniel Stoilkovski - Professional Portfolio_files/portrait.jpg" alt="Daniel Stoilkovski" width="480" height="480">
         <h1 id="hero-title">Daniel Stoilkovski</h1>
         <p id="hero-subtitle">Geography teacher and self-taught developer. I build the things I need, then publish them.</p>
       </div>
