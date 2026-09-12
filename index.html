@@ -55,8 +55,8 @@
     }
     /* The source is a square crop, so the circle only ever clips corners. */
     .portrait {
-      width:clamp(110px, 18vw, 160px); height:clamp(110px, 18vw, 160px);
-      border-radius:50%; object-fit:cover; margin:0 auto 22px;
+      width:clamp(140px, 22vw, 200px); height:clamp(140px, 22vw, 200px);
+      border-radius:50%; object-fit:cover;
       border:3px solid rgba(96,165,250,0.45);
       box-shadow:0 12px 28px rgba(0,0,0,0.45);
     }
@@ -84,9 +84,20 @@
       content:''; position:absolute; bottom:-10px; left:0; width:60px; height:3px;
       background:linear-gradient(90deg, var(--accent-deep) 0%, var(--accent-cyan) 100%);
     }
+    /* The portrait comes first in the markup so a phone shows the face above
+       the paragraph. On a wide screen it is placed into the second column,
+       which also fills the strip of dead space this section used to leave. */
+    .about-row { display:grid; gap:clamp(22px, 4vw, 48px); align-items:start; justify-items:start; }
     .about-text {
       font-size:clamp(1rem, 2.2vw, 1.1rem); line-height:1.8;
-      color:var(--ink-soft); max-width:70ch; margin-top:8px;
+      color:var(--ink-soft); max-width:68ch;
+    }
+    @media (min-width:860px) {
+      /* auto columns rather than 1fr, so the portrait sits beside the
+         paragraph instead of drifting to the far edge of the section. */
+      .about-row { grid-template-columns:auto auto; justify-content:start; align-items:center; }
+      .about-row .portrait { grid-column:2; grid-row:1; }
+      .about-row .about-text { grid-column:1; grid-row:1; }
     }
 
     /* ----- EXPERIENCE & EDUCATION ----- */
@@ -183,7 +194,6 @@
     <!-- HERO -->
     <section class="hero-section">
       <div class="hero-content">
-        <img class="portrait" src="./Daniel Stoilkovski - Professional Portfolio_files/portrait.jpg" alt="Daniel Stoilkovski" width="480" height="480">
         <h1 id="hero-title">Daniel Stoilkovski</h1>
         <p id="hero-subtitle">Geography teacher and self-taught developer. I build the things I need, then publish them.</p>
       </div>
@@ -192,10 +202,13 @@
     <!-- ABOUT -->
     <section class="section">
       <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        Versatile professional with six years of sales experience at Neptun Makedonija and current Geography Teacher at Ilinden Elementary School.
-        Full-stack web developer who has shipped two live applications from scratch: a crypto asset tracker and rotator, and a QR-code restaurant menu built for real table service. Published author twice over: a memoir on a decade in Bitcoin, and a Valheim music mod carrying an original score. A pantry and shopping-list app is in active development. Passionate about combining technical excellence, education, and real-world impact.
-      </p>
+      <div class="about-row">
+        <img class="portrait" src="./Daniel Stoilkovski - Professional Portfolio_files/portrait.jpg" alt="Daniel Stoilkovski" width="480" height="480">
+        <p class="about-text">
+          Versatile professional with six years of sales experience at Neptun Makedonija and current Geography Teacher at Ilinden Elementary School.
+          Full-stack web developer who has shipped two live applications from scratch: a crypto asset tracker and rotator, and a QR-code restaurant menu built for real table service. Published author twice over: a memoir on a decade in Bitcoin, and a Valheim music mod carrying an original score. A pantry and shopping-list app is in active development. Passionate about combining technical excellence, education, and real-world impact.
+        </p>
+      </div>
     </section>
 
     <!-- EXPERIENCE -->
